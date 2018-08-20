@@ -1,0 +1,140 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+
+.container {
+  position: relative;
+}
+
+/* Hide the images by default */
+
+.mySlides {
+  display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+
+.cursor {
+  cursor: pointer;
+}
+
+/* Next & previous buttons */
+
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  padding: 20px;
+  margin-top: -50px;
+  color: white;
+  font-weight: bold;
+  font-size: 20px;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  -webkit-user-select: none;
+  margin: 20px;
+  background-color: rgba(249, 205, 168, 0.5);
+}
+
+/* Position the "next button" to the right */
+
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+.prev {
+  left: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+
+.prev:hover,
+.next:hover {
+  background: rgba(78, 39, 5, 0.5);
+}
+
+/* Number text (1/3 etc) */
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* Container for image text */
+
+.caption-container {
+  text-align: center;
+  background-color: #f9cda8;
+  padding: 2px 16px;
+  color: #73080d;
+}
+
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Six columns side by side */
+
+/* Add a transparency effect for thumnbail images */
+
+.demo {
+  opacity: 0.6;
+}
+
+.active,
+.demo:hover {
+  opacity: 1;
+}
+
+.mySlides .img-thumbnail {
+  height: 700px;
+  width: 100%;
+}
+
+.gallery-thumbnail .img-thumbnail {
+  height: 200px;
+  width: 100%;
+}
+#caption {
+margin-bottom: 0;
+}
+@media(max-width: 999px) {
+  .mySlides .img-thumbnail {
+    height: 350px;
+    width: 100%;
+  }
+  .gallery-thumbnail .img-thumbnail {
+    height: 200px;
+    width: 100%;
+  }
+  .prev,
+  .next {
+    top: 20%;
+  }
+}
+
+@media(max-width: 575px) {
+  .mySlides .img-thumbnail {
+    height: 250px;
+    width: 100%;
+  }
+  .gallery-thumbnail .img-thumbnail {
+    height: 180px;
+    width: 100%;
+  }
+  .prev,
+  .next {
+    top: 10%;
+  }
+}
